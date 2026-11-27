@@ -10,5 +10,6 @@ if (!Number.isInteger(port) || port < 0 || port > 65535) {
 export const env = {
   port,
   nodeEnv: process.env.NODE_ENV || 'development',
+  logLevel: process.env.LOG_LEVEL || 'info',
 };
 
